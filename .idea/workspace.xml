@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baf712a2-0260-4efd-b4c4-ede9a799afe8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SeckillDao.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SuccessKilledDao.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,57 +38,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SeckillDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/seckill/dao/SeckillDao.java">
+      <file leaf-file-name="spring-dao.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="21" />
+            <state relative-caret-position="470">
+              <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#778#789#0" expanded="true" />
+                <element signature="e#831#839#0" expanded="true" />
+                <element signature="e#878#891#0" expanded="true" />
+                <element signature="e#934#947#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SuccessKilledDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/seckill/dao/SuccessKilledDao.java">
+      <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="38" />
+            <state relative-caret-position="45">
+              <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SeckillDao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SeckillDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-              <folding>
-                <marker date="1519286261905" expanded="true" signature="284:393" ph="UPDATE seckill... " />
-                <marker date="1519286261905" expanded="true" signature="284:406" ph="UPDATE seckill... " />
-                <marker date="1519286261905" expanded="true" signature="284:409" ph="UPDATE seckill... " />
-                <marker date="1519286261905" expanded="true" signature="284:481" ph="UPDATE seckill... " />
-                <marker date="1519286261905" expanded="true" signature="284:489" ph="UPDATE seckill... " />
-                <marker date="1519286261905" expanded="true" signature="576:626" ph="select secki... " />
-                <marker date="1519286261905" expanded="true" signature="576:698" ph="select secki... seckill" />
-                <marker date="1519286261905" expanded="true" signature="770:861" ph="select secki... seckill" />
-                <marker date="1519286261905" expanded="true" signature="770:919" ph="select secki... seckill" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SuccessKilledDao.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SuccessKilledDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
-              <folding>
-                <marker date="1519292272885" expanded="true" signature="302:402" ph="insert into success_killed... " />
-                <marker date="1519292272885" expanded="true" signature="600:1084" ph="SELECT sk.se... success_killed" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -126,6 +95,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/SeckillDao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/SuccessKilledDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" />
       </list>
     </option>
   </component>
@@ -213,14 +184,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="seckill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="seckill" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="seckill" type="b2602c69:ProjectViewProjectNode" />
@@ -366,12 +329,12 @@
       <updated>1519219316306</updated>
       <workItem from="1519219317963" duration="1743000" />
       <workItem from="1519221373079" duration="3756000" />
-      <workItem from="1519276536609" duration="10069000" />
+      <workItem from="1519276536609" duration="14224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15568000" />
+    <option name="totallyTimeSpent" value="19723000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
@@ -568,20 +531,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/seckill/dao/SeckillDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -604,6 +559,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SuccessKilledDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding>
+            <marker date="1519292272885" expanded="true" signature="302:402" ph="insert into success_killed... " />
+            <marker date="1519292272885" expanded="true" signature="600:1084" ph="SELECT sk.se... success_killed" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/seckill/dao/SuccessKilledDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -612,13 +586,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SuccessKilledDao.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+        <state relative-caret-position="45">
+          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
           <folding>
-            <marker date="1519292272885" expanded="true" signature="302:402" ph="insert into success_killed... " />
-            <marker date="1519292272885" expanded="true" signature="600:1084" ph="SELECT sk.se... success_killed" />
+            <element signature="e#778#789#0" expanded="true" />
+            <element signature="e#831#839#0" expanded="true" />
+            <element signature="e#878#891#0" expanded="true" />
+            <element signature="e#934#947#0" expanded="true" />
           </folding>
         </state>
       </provider>
