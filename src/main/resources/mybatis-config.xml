@@ -10,7 +10,7 @@
         <!-- 使用别名替换列名 默认：true
             select name as title form table
         -->
-        <setting name="useColumnLabel" value="ture"/>
+        <setting name="useColumnLabel" value="true"/>
         <!-- 开启驼峰命名转换：
             Table(create_time) -> Entity(createTime)
         -->
