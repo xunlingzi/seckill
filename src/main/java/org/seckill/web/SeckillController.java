@@ -26,7 +26,7 @@ public class SeckillController {
     @Autowired
     private SeckillService seckillService;
 
-    @RequestMapping(value = "/lsit", method = RequestMethod.GET)
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String list(Model model) {
         //获取列表页
         List<Seckill> list = seckillService.getSeckillList();
@@ -52,7 +52,7 @@ public class SeckillController {
             method = RequestMethod.POST,
             produces = {"application/json;charset=UTF-8"})
     @ResponseBody //返回json
-    public SeckillResult<Exposer> exposer(Long seckillId) {
+    public SeckillResult<Exposer> exposer(@PathVariable("seckillId") Long seckillId) {
         SeckillResult<Exposer> result;
         try {
             Exposer exposer = seckillService.exportSeckillUrl(seckillId);
@@ -72,7 +72,7 @@ public class SeckillController {
                                                      @PathVariable("md5") String md5,
                                                     @CookieValue(value = "killPhone", required = false) Long phone) {
         //spring valid
-        if(phone ==null) {
+        if(phone == null) {
             return new SeckillResult<SeckillExecution>(false, "未注册");
         }
         try {
@@ -81,13 +81,13 @@ public class SeckillController {
 
         } catch (RepeatKillException e) {
             SeckillExecution execution = new SeckillExecution(seckillId, SeckillStateEnum.REPEAT_KILL);
-            return new SeckillResult<SeckillExecution>(false, execution);
+            return new SeckillResult<SeckillExecution>(true, execution);
         } catch (SeckillCloseException e) {
             SeckillExecution execution = new SeckillExecution(seckillId, SeckillStateEnum.END);
-            return new SeckillResult<SeckillExecution>(false, execution);
+            return new SeckillResult<SeckillExecution>(true, execution);
         } catch (Exception e) {
             SeckillExecution execution = new SeckillExecution(seckillId, SeckillStateEnum.INNER_ERROR);
-            return new SeckillResult<SeckillExecution>(false, execution);
+            return new SeckillResult<SeckillExecution>(true, execution);
         }
     }
 
